@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация &#127759</title>
+    <link rel="stylesheet" href="/assets/css/registartion.css">
+    <link rel="stylesheet" href="/assets/css/profile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="userinput">
+        <form>
+            <h3 class="text-center">Регистрация</h3>
+            <div>
+                <p><b>Кто Вы?</b></p>
+                 <p><input name="whoareyou" type="radio" value="student" checked> Студент</p>
+                 <p><input name="whoareyou" type="radio" value="specialist"> Специалист</p>
+                 <p><input name="whoareyou" type="radio" value="issledovatel"> Исследователь</p>
+               </div> 
+            <div class="form-group">
+                <input class="form-control item" type="text" name="firstname" maxlength="30" minlength="2" pattern="^[A-Za-zА-Яа-я]{2,80}$" id="firstname" placeholder="Имя" required>
+            </div>
+            <div class="form-group">
+                <input class="form-control item" type="text" name="lasttname" maxlength="30" minlength="2" pattern="^[A-Za-zА-Яа-я]{2,80}$" id="lastname" placeholder="Фамилия" required>
+            </div>
+            <div class="form-group">
+                <input class="form-control item" type="text" name="login" maxlength="30" minlength="4" pattern="^[a-zA-Z0-9_.-]*$" id="username" placeholder="Логин" required>
+            </div>
+            <div class="form-group">
+                <input class="form-control item" type="password" name="password" minlength="6" id="password" placeholder="Пароль" required>
+            </div>
+            <div class="form-group">
+                <input class="form-control item" type="password" name="passwordapproval" minlength="6" id="passwordapproval" placeholder="Подтверждение пароля" required>
+            </div>
+            <div class="form-group">
+                <input class="form-control item" type="text" name="email" minlength="6" id="email" placeholder="e-mail" required>
+            </div>
+            <div class="form-group">
+                <select name="university" id="university">
+                    <option value="null"></option>
+                    <option value="igin">ИГиН</option>
+                    <option value="vshct">ВШЦТ</option>
+                    <option value="stroin">СТРОИН</option>
+                    <option value="arhid">АРХИД</option>
+                    <option value="iddo">ИДДО</option>
+                </select>
+
+            </div>
+            <div class="form-group">
+                <input class="form-control item" type="text" name="group" id="group" placeholder="Группа">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary btn-block create-account" type="submit">Зарегистрироваться</button>
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>
