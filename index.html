@@ -15,17 +15,19 @@
 <body>
 	<header class="header">
 		<div class="main-menu-button" id="main-menu-button"><i class="ri-menu-fold-2-fill"></i></div>
-		<div class="sitename"><a href="">HackGEO &#127759</a></div>
+		<div class="sitename"><a href="index.html">HackGEO &#127759</a></div>
+		<button class="mode-button" onclick="toggleBrightMode()">Смена темы</button>
+		<div class="practice"><a href="/practice/5_2.html">ПРАКТИКА</a></div>
 	</header>
 		<nav class="wrap-main-menu">
 			<ul class="main-menu">
-				<li><a href="#"><i class="ri-user-3-fill"></i> Профиль</a></li>
+				<li><a href="/profileform.html"><i class="ri-user-3-fill"></i> Профиль</a></li>
 				<li><a href="https://www.tyuiu.ru/"><i class="ri-newspaper-line"></i> Новости</a></li>
-				<li><a href="#"><i class="ri-book-line"></i> Библиотека</a></li>
-				<li><a href="#"><i class="ri-microscope-fill"></i> Лабораторные работы</a></li>
-				<li><a href="#"><i class="ri-graduation-cap-fill"></i> Экзамены</a></li>
-				<li><a href="#"><i class="ri-feedback-line"></i> Обратная связь</a></li>
-				<li><a href="#"><i class="ri-contacts-fill"></i> Контакты</a></li>
+				<li><a href="/library.html"><i class="ri-book-line"></i> Библиотека</a></li>
+				<li><a href="/labs.html"><i class="ri-microscope-fill"></i> Лабораторные работы</a></li>
+				<li><a href="/exams.html"><i class="ri-graduation-cap-fill"></i> Экзамены</a></li>
+				<li><a href="/feedback.html"><i class="ri-feedback-line"></i> Обратная связь</a></li>
+				<li><a href="/contacts.html"><i class="ri-contacts-fill"></i> Контакты</a></li>
 			</ul>
 		</nav>
 	<section class="news">
@@ -35,7 +37,7 @@
 		<br>
 			<article>
 				<b>Тюменский индустриальный университет удержал позиции и вновь вошел в премьер-лигу 
-				<a style="color: white;" href="https://best-edu.ru/ratings/national/nacionalnyj-agregirovannyj-rejting">Национального 
+				<a href="https://best-edu.ru/ratings/national/nacionalnyj-agregirovannyj-rejting">Национального 
 				агрегированного рейтинга – 2024.</a></b>
 				<br>
 				<br>
@@ -86,21 +88,36 @@
 			</article>
 		</div>
 	</section>
-	<table>
-		<tr>
-			<td>строка</td>
-			<td>строка</td>
-		</tr>
-		<tr>
-			<td>столбец</td>
-		</tr>
-		<tr>
-			<td>dfgfdg</td>
-		</tr>
-		<tr>
-			<td>dfgdf</td>
-		</tr>
-	</table>
+	<div id="custom-menu">
+        <ul>
+            <li id="option-1">Пункт 1</li>
+            <li id="option-2">Пункт 2</li>
+            <li id="option-3">Пункт 3</li>
+        </ul>
+    </div>
+	<h1>Список опубликованных научных статей</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Название</th>
+                <th>Автор</th>
+                <th>Год публикацииы</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Комплексный подход к применению методов анализа эффективности системы заводнения нефтяных пластов/td>
+                <td>Пинигин С.Н.</td>
+                <td>2024</td>
+            </tr>
+            <tr>
+                <td>Методика количественного анализа эффективности систем заводнения</td>
+                <td>Пинигин С.Н.</td>
+                <td>2024</td>
+            </tr>
+            </tr>
+        </tbody>
+    </table>
 	<div class="video">
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/p5S4MzPpjHs?si=-ggZppg4Bd7OsIAK" 
 		title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 

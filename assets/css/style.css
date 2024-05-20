@@ -4,16 +4,17 @@
 }
 
 html {
-    background-blend-mode:overlay;
-	background-image: url(/assets/img/background.jpg);
-    
     justify-content:center;
     height:100%;
     font-family: "Roboto", sans-serif;
 	color: #f2f3f4;
 	font-weight: 400;
 	font-style: normal;
-  }
+}
+
+body {
+	background: #292929;
+}
 
 .header {
 	padding: 10px;
@@ -28,6 +29,59 @@ html {
 	font-size: 32pt;
 	text-decoration: none;
 	color: rgb(255, 255, 255);
+}
+
+.practice {
+	font-weight: bold;
+	font-size: 32pt;
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	color: inherit
+}
+
+.sitename a:focus {
+	color: rgb(221, 48, 48);
+}
+
+.mode-button {
+	margin: 10px;
+	padding: 10px 10px;
+	cursor: pointer;
+	background-color: #ff0000;
+	color: white;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition: background-color 0.3s;
+}
+
+.mode-button:hover {
+	background-color: #f87e7e;
+}
+
+.bright-mode {
+	body {
+		background: #ffffff;
+	}
+	.header {
+		background-color: rgb(255, 255, 255);
+	}
+	.footer {
+		background-color: rgb(255, 255, 255);
+		color: #000000;
+	}
+	.sitename a {
+		color: rgb(0, 0, 0);
+	}
+	.main-menu-button {
+		color: #000000;
+	}
+	ul a {
+		color: rgb(0, 0, 0);
+	}
+	.wrap-main-menu {
+		background-color: rgba(255, 255, 255, 0.9);
+	}
 }
 
 .main-menu li {
@@ -50,7 +104,7 @@ ul a {
 	width: 48px;
 	margin-right: 30px;
 	font-size: 36pt;
-	color: #f2f3f4;
+	color: #ffffff;
 }
 
 .wrap-main-menu {
@@ -72,7 +126,17 @@ ul a {
 	font-weight: bold;
 }
 
-body.overlay::before {
+article a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.news-3 {
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+/* body.overlay::before {
     content: "";
     display: block;
     left: 0;
@@ -82,11 +146,12 @@ body.overlay::before {
     background-color: rgba(0, 0, 0, .6);
     position: absolute;
     z-index: -1;
-}
+} */
 
 .news {
 	margin-left: 20px;
 	margin-right: 20px;
+	margin-bottom: 20px;
 	line-height: 30px;
 	border-style: solid;
 	border-radius: 30px;
@@ -123,4 +188,47 @@ body.overlay::before {
 	bottom: 0px;
 	width: 100%;
 	position: fixed;
+}
+
+#custom-menu {
+	display: none;
+	position: absolute;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+	z-index: 1000;
+	color: #000000;
+}
+#custom-menu ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+#custom-menu ul li {
+	padding: 8px 12px;
+	cursor: pointer;
+}
+#custom-menu ul li:hover {
+	background-color: #4be02d;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 20px;
+	color: #ff0000;
+}
+th, td {
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+th {
+	background-color: #f2f2f2;
+	text-align: left;
+}
+tr:nth-child(even) {
+	background-color: #f9f9f9;
+}
+tr:hover {
+	background-color: #ddd;
 }
